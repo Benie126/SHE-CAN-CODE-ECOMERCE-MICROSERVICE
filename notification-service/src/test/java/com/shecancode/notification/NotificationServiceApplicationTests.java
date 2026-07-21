@@ -1,0 +1,1 @@
+package com.shecancode.notification; import org.junit.jupiter.api.Test; import org.springframework.boot.test.context.SpringBootTest; @SpringBootTest(properties={"spring.datasource.url=jdbc:h2:mem:testnotification","eureka.client.enabled=false"}) class NotificationServiceApplicationTests{@Test void contextLoads(){}}

@@ -1,0 +1,1 @@
+package com.shecancode.order.repo; import com.shecancode.order.model.CustomerOrder; import org.springframework.data.jpa.repository.JpaRepository; import java.util.*; public interface OrderRepository extends JpaRepository<CustomerOrder,Long>{List<CustomerOrder> findByUserIdOrderByCreatedAtDesc(Long userId);}

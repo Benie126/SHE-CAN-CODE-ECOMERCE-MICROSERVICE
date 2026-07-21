@@ -1,0 +1,1 @@
+package com.shecancode.product.dto; public record StockRequest(Integer quantity){}

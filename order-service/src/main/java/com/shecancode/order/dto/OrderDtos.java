@@ -1,0 +1,1 @@
+package com.shecancode.order.dto; public class OrderDtos { public record CartRequest(Long productId,Integer quantity){} public record CheckoutRequest(Long userId,Long addressId){} public record StatusRequest(String status){} }

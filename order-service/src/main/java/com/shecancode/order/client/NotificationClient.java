@@ -1,0 +1,1 @@
+package com.shecancode.order.client; import org.springframework.cloud.openfeign.FeignClient; import org.springframework.web.bind.annotation.*; @FeignClient(name="NOTIFICATION-SERVICE") public interface NotificationClient { @PostMapping("/api/notifications") Object create(@RequestBody NotificationRequest r); record NotificationRequest(Long userId,String title,String message){} }

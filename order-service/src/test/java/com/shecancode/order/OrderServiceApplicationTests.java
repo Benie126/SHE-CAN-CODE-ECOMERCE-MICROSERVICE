@@ -1,0 +1,1 @@
+package com.shecancode.order; import org.junit.jupiter.api.Test; import org.springframework.boot.test.context.SpringBootTest; @SpringBootTest(properties={"spring.datasource.url=jdbc:h2:mem:testorder","eureka.client.enabled=false","spring.cloud.openfeign.client.config.default.url=http://localhost:9999"}) class OrderServiceApplicationTests{@Test void contextLoads(){}}

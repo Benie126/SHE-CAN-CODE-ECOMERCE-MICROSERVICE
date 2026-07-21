@@ -1,0 +1,1 @@
+package com.shecancode.product; import org.junit.jupiter.api.Test; import org.springframework.boot.test.context.SpringBootTest; @SpringBootTest(properties={"spring.datasource.url=jdbc:h2:mem:testproduct","eureka.client.enabled=false"}) class ProductServiceApplicationTests{@Test void contextLoads(){}}

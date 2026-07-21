@@ -1,0 +1,1 @@
+package com.shecancode.user.dto; import com.shecancode.user.model.AppUser; public class AuthDtos { public record RegisterRequest(String firstName,String lastName,String email,String password){} public record LoginRequest(String email,String password){} public record LoginResponse(AppUser user,String message){} }

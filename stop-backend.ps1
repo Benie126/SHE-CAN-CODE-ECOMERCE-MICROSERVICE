@@ -1,0 +1,1 @@
+$ports=8761,8080,8081,8082,8083,8084; foreach($p in $ports){Get-NetTCPConnection -LocalPort $p -ErrorAction SilentlyContinue | ForEach-Object {Stop-Process -Id $_.OwningProcess -Force -ErrorAction SilentlyContinue}}; Write-Host "Backend stopped."
